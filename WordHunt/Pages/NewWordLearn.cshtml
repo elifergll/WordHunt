@@ -1,0 +1,26 @@
+﻿@page
+@model WordHunt.Pages.NewWordLearnModel
+@{
+    Random rnd = new Random();
+    int r = rnd.Next(@Model.Questions.Count);
+}
+<script src="~/page/newwordlearn/newword.js"></script>
+<link href="~/page/newwordlearn/newword.css" rel="stylesheet" />
+<div class="question-container">
+    <div class="question-area">
+        <div class="question-content">
+            <p class="p-style question">@Model.Questions[0].Questions</p>
+            <span>( Tercüme Seçin )</span>
+        </div>
+        <div class="question-option">
+            @foreach (var item in Model.Questions)
+            {
+                <div class="radio-option">
+                    <input type="radio" name="question" value="" />
+                    <p class="p-style">@item.Options</p>
+                </div>
+            }
+            <div class="button-card"><button class="iamok">Tamam</button></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+﻿.main-card {
+    border-radius: 15px;
+    padding: 3%;
+    width: 33%;
+    background: rgb(162,231,161);
+    background: linear-gradient(90deg, rgba(162,231,161,1) 0%, rgba(17,224,240,1) 100%);
+    margin: 3%;
+    box-shadow: 0px 0px 10px grey;
+    font-size: 13px !important;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-container {
+    display: flex;
+}
+
+.main-container > a {
+    text-decoration: none;
+}
+
+@media(max-width:600px) {
+    .main-card {
+        width: 100% !important;
+    }
+}

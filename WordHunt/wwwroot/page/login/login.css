@@ -1,0 +1,160 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+html,
+body {
+    /*background: rgb(42, 33, 204);
+    background: linear-gradient( 90deg, rgba(42, 33, 204, 1) 0%, rgba(141, 0, 196, 1) 35%, rgba(0, 212, 255, 1) 100% );*/
+    font-family: Roboto, sans-serif;
+}
+
+label{
+    font-size:11px;
+}
+
+.main {
+    width: 100%;
+    margin: 0px auto;
+    display: table;
+    padding: 17% 0;
+    /*height: 100vh;*/
+}
+
+.wrapper {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    /*padding-top: 40px;*/
+}
+
+.content {
+    overflow: hidden;
+    max-width: 355px;
+    width: 100%;
+    box-shadow: 0 2px 32px 0 rgb(0 55 135 / 37%);
+    backdrop-filter: blur(18px);
+    border-radius: 15px;
+    padding: 20px;
+    animation: zoom 0.5s ease-in;
+    text-align: center;
+    margin: 0px auto;
+    border: 1px solid #ebebef;
+    animation: 1s fadeInDown;
+}
+
+span.psw {
+    float: right;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+span.create {
+    float: left;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 12px 20px;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin: 20px auto;
+    border: 1px solid cadetblue;
+}
+input:focus {
+    background-color: aliceblue;
+    border: 1px solid #00bfc5 !important;
+}
+
+.buttons {
+    padding-left: 8px;
+    padding-top: 3px;
+    float: left;
+    line-height: 0px;
+}
+
+.close {
+    background: #ff5c5c;
+    font-size: 9pt;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #e33e41;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+    .close:active {
+        border: 1px solid rgb(0, 0, 0, 0.5);
+    }
+
+.minimize {
+    background: #ffbd4c;
+    font-size: 9pt;
+    line-height: 11px;
+    margin-left: 4px;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #e09e3e;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+    .minimize:active {
+        border: 1px solid rgb(0, 0, 0, 0.5);
+    }
+
+.zoom {
+    background: #00ca56;
+    font-size: 9pt;
+    line-height: 11px;
+    margin-left: 6px;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #14ae46;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+    .zoom:active {
+        border: 1px solid rgb(0, 0, 0, 0.5);
+    }
+
+button {
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    background: #16addb;
+    transition: 0.5s ease-in;
+    margin: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 3px 40px;
+    border: 1px solid #00bfc5;
+}
+
+    button:hover {
+        background: #2b89a5;
+    }
+
+/* Change styles for span on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        float: none;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}

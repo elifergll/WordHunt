@@ -1,0 +1,12 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Anasayfa";
+}
+<link href="~/page/index/index.css" rel="stylesheet" />
+<script src="~/page/index/index.js"></script>
+<div class="main-container">
+    <a class="main-card" asp-page="/NewWordLearn"><div><h2>Yeni Kelime Öğren</h2></div></a>
+    <a class="main-card" asp-page="/WordGame"><div><h2>Kelime Oyunu</h2></div></a>
+    <a class="main-card" asp-page="/WordPool"><div><h2>Kelime Havuzu</h2></div></a>
+</div>

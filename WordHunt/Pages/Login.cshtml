@@ -1,0 +1,18 @@
+﻿@page
+@model WordHunt.Pages.LoginModel
+<script src="~/page/login/login.js"></script>
+<link href="~/page/login/login.css" rel="stylesheet" />
+<div class="main">
+    <div class="wrapper">
+        <form method="post">
+            <div class="content">
+                <h3 style="color: #16addb">Giriş Yap</h3>
+                @*<label for="uname"><b>Kullanıcı Adı</b></label>*@
+                <input type="text" placeholder="Kullanıcı adı" name="Username" required>
+                @*<label for="psw"><b>Şifre</b></label>*@
+                <input type="password" placeholder="Şifre" name="Password" required>
+                <button type="submit">Giriş</button>
+            </div>
+        </form>
+    </div>
+</div>
